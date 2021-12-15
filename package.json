@@ -1,10 +1,11 @@
 {
   "name": "test",
   "productName": "test",
-  "version": "0.0.8",
+  "version": "0.0.9",
   "description": "My Electron application description",
   "main": "src/index.js",
   "scripts": {
+    "postinstall": "electron-builder install-app-deps",
     "start": "electron .",
     "pack": "electron-builder --dir",
     "dist": "electron-builder --mac",
