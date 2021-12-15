@@ -1,7 +1,7 @@
 {
   "name": "test",
   "productName": "test",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "My Electron application description",
   "main": "src/index.js",
   "scripts": {
@@ -50,7 +50,7 @@
   },
   "devDependencies": {
     "electron": "15.2.0",
-    "electron-builder": "^22.10.5",
+    "electron-builder": "^22.8.0",
     "cli-truncate": "*"
   }
 }
