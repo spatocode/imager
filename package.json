@@ -20,12 +20,8 @@
   "build": {
     "appId": "com.app.mac",
     "copyright": "Copyright (C) 2021",
-    "linux": {
-      "target": [
-        "darwin"
-      ],
-      "synopsis": "app",
-      "description": "app description"
+    "mac": {
+      "target": "dmg"
     },
     "snap": {
       "publish": "github"
