@@ -1,7 +1,7 @@
-const path = require("path")
-const { app } = require('@electron/remote');
+import path from 'path'
+import { app } from '@electron/remote'
 
-const {PythonShell} = require('python-shell');
+import {PythonShell} from 'python-shell'
 
 
 
