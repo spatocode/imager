@@ -1,5 +1,5 @@
 import path from 'path'
-import { app } from '@electron/remote'
+import { remote } from 'electron'
 
 import {PythonShell} from 'python-shell'
 
@@ -12,8 +12,8 @@ folder.onchange=function(){
   var pop_path = split_path.pop()
   var file_path = split_path.join('/')
 
-  let pythonPath = app.isPackaged ? path.join(process.resourcesPath, "python", "bin", "python3.10") : path.join(process.cwd(), "python", "bin", "python3.10")
-  let scriptPath = app.isPackaged ? process.resourcesPath : process.cwd()
+  let pythonPath = remote.app.isPackaged ? path.join(process.resourcesPath, "python", "bin", "python3.10") : path.join(process.cwd(), "python", "bin", "python3.10")
+  let scriptPath = remote.app.isPackaged ? process.resourcesPath : process.cwd()
   let options = {
     mode: 'text',
     pythonPath:  pythonPath,

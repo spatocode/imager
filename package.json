@@ -1,13 +1,13 @@
 {
   "name": "test",
   "productName": "test",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "My Electron application description",
   "main": "src/index.js",
   "scripts": {
     "start": "electron .",
     "pack": "electron-builder --dir",
-    "dist": "electron-builder --mac",
+    "dist": "electron-builder --linux",
     "release": "electron-builder --mac --publish always",
     "lint": "echo \"No linting configured\""
   },
@@ -44,12 +44,11 @@
     ]
   },
   "dependencies": {
-    "@electron/remote": "^2.0.1",
     "electron-squirrel-startup": "^1.0.0",
     "python-shell": "^3.0.1"
   },
   "devDependencies": {
-    "electron": "15.2.0",
+    "electron": "9.0.4",
     "electron-builder": "^22.8.0",
     "cli-truncate": "*"
   }
