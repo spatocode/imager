@@ -1,14 +1,14 @@
 {
   "name": "test",
   "productName": "test",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "My Electron application description",
   "main": "src/index.js",
   "scripts": {
     "start": "electron .",
     "pack": "electron-builder --dir",
     "dist": "electron-builder",
-    "publish": "electron-builder --mac --win -p always",
+    "publish": "electron-builder --mac",
     "lint": "echo \"No linting configured\""
   },
   "keywords": [],
