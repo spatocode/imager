@@ -22,8 +22,7 @@
     "copyright": "Copyright (C) 2021",
     "linux": {
       "target": [
-        "AppImage",
-        "deb"
+        "darwin"
       ],
       "synopsis": "app",
       "description": "app description"
