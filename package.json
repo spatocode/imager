@@ -1,13 +1,13 @@
 {
   "name": "test",
   "productName": "test",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "My Electron application description",
   "main": "src/index.js",
   "scripts": {
     "start": "electron .",
     "pack": "electron-builder --dir",
-    "dist": "electron-builder --linux",
+    "dist": "electron-builder --mac",
     "release": "electron-builder --mac --publish always",
     "lint": "echo \"No linting configured\""
   },
@@ -20,12 +20,6 @@
   "build": {
     "appId": "com.app.mac",
     "copyright": "Copyright (C) 2021",
-    "mac": {
-      "target": "dmg"
-    },
-    "snap": {
-      "publish": "github"
-    },
     "extraResources": [
       {
         "from": "python",
@@ -44,12 +38,10 @@
     ]
   },
   "dependencies": {
-    "electron-squirrel-startup": "^1.0.0",
     "python-shell": "^3.0.1"
   },
   "devDependencies": {
     "electron": "9.0.4",
-    "electron-builder": "^22.8.0",
-    "cli-truncate": "*"
+    "electron-builder": "^22.8.0"
   }
 }
