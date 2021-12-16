@@ -12,7 +12,7 @@ folder.onchange=function(){
   var pop_path = split_path.pop()
   var file_path = split_path.join('/')
 
-  let pythonPath = remote.app.isPackaged ? path.join(process.resourcesPath, "python", "bin", "python3.10") : path.join(process.cwd(), "python", "bin", "python3.10")
+  let pythonPath = remote.app.isPackaged ? path.join(process.resourcesPath, "python", "bin", "python3.9") : path.join(process.cwd(), "python", "bin", "python3.9")
   let scriptPath = remote.app.isPackaged ? process.resourcesPath : process.cwd()
   let options = {
     mode: 'text',
