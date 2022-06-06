@@ -1,6 +1,6 @@
 {
-  "name": "test",
-  "productName": "test",
+  "name": "imager",
+  "productName": "Imager",
   "version": "0.0.12",
   "description": "My Electron application description",
   "main": "src/index.js",
@@ -8,19 +8,29 @@
     "postinstall": "electron-builder install-app-deps",
     "start": "electron .",
     "pack": "electron-builder --dir",
-    "dist": "electron-builder --mac",
-    "release": "electron-builder --mac --publish always",
+    "dist": "electron-builder -p always",
+    "release": "electron-builder --mac --win -p always",
     "lint": "echo \"No linting configured\""
   },
   "keywords": [],
   "author": {
-    "name": "hhhimanshull",
-    "email": "“hhhimanshull@gmail.com”"
+    "name": "Ekene Izukanne",
+    "email": "ekeneizukanne@gmail.com",
+    "url": "http://spatocode.com"
   },
-  "license": "MIT",
+  "license": "GPL-2.0",
   "build": {
-    "appId": "com.app.mac",
-    "copyright": "Copyright (C) 2021",
+    "appId": "com.spatocode.imager",
+    "copyright": "Copyright (C) 2021 Ekene Izukanne",
+    "linux": {
+      "target": [
+        "AppImage",
+        "deb"
+      ]
+    },
+    "win": {
+      "verifyUpdateCodeSignature": false
+    },
     "extraResources": [
       {
         "from": "python",
