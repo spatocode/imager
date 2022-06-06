@@ -1,7 +1,7 @@
 {
   "name": "imager",
   "productName": "Imager",
-  "version": "0.0.12",
+  "version": "0.1.0",
   "description": "Simple image optimization app to demonstrate calling python code in electron process",
   "main": "src/index.js",
   "scripts": {
